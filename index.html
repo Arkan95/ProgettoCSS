@@ -2,48 +2,61 @@
 <html lang="it">
 
 <head>
+  <link rel="stylesheet" href="./styles/style.css" />
   <meta charset="utf-8" />
   <meta name="description" content="questo è il mio primo sito" />
   <meta name="author" content="@hpv_4Learning" />
   <meta name="keywords" content="sono una intestazione, bel paragrafo, sottotitolo" />
   <title>Il Primo Blog</title>
-  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
+
 <body>
+  <!-- *******NAVBAR******* -->
   <header id="header">
-    <nav>
-      <div>
-        <h4>
-          LOGO
-        </h4>
+    <nav id="navbar" class="flex-container">
+      <div class="container">
+        <div class="flex-container align-center space-between">
+          <div>
+            <h4>LOGO</h4>
+          </div>
+          <ul id="nav-list" class="flex-container">
+            <li class="active-link">Home</li>
+            <li>About</li>
+            <li>Contatti</li>
+            <li>Supporto</li>
+            <li>Accedi</li>
+            <li>Registrati</li>
+          </ul>
+        </div>
       </div>
-      <ul id="nav-list">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contatti</li>
-        <li>Supporto</li>
-        <li>Accedi</li>
-        <li>Registrati</li>
-      </ul>
     </nav>
-    <div>
+
+    <!-- *******IL MIO PRIMO BLOG******* -->
+    <div id="claim" class="flex-container align-center">
+      <div class="container flex-container align-center justify-center">
       <h1>Il mio primo Blog</h1>
+      </div>
     </div>
   </header>
-  <nav>
-    <ul id="nav-list">
-      <input type="text" placeholder="Cerca un articolo"/>
+
+  <!--  -->
+  <nav id="search-nav" class="flex-container">
+    <div class="container">
+      <div class="flex-container align-center space-between">
+      <input type="text" placeholder="Cerca un articolo" />
       <div>
-        <ul>
+        <ul class="flex-container">
           <li>Tutto</li>
           <li>Mercato</li>
           <li>Business</li>
           <li>Crypto</li>
-          <li>Latino</li>
+          <li class="active-link">Sviluppo</li>
           <li>Video</li>
         </ul>
       </div>
+      </div>
+    </div>
   </nav>
   <!--FINE NAVIGAZIONE-->
   <main>
@@ -52,7 +65,7 @@
       <article class="post-container" id="post-1">
         <h3 class="post-title">Titolo 1</h3>
         <h4 class="post-subtitle">Sottotitolo 1</h4>
-        <img class="img" src="https://live.staticflickr.com/65535/33704762835_e3af4a9997_b.jpg" alt="Tramonto sunset"/>
+        <img class="img" src="https://live.staticflickr.com/65535/33704762835_e3af4a9997_b.jpg" alt="Tramonto sunset" />
         <p class="post-paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum
           sapiente suscipit totam nemo <b>sed corporis</b> rerum sit earum,
