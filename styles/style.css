@@ -1,12 +1,48 @@
+/*Styling di base. Usato per colpire tutti gli elementi*/
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 
-*::after,
-*::before{
+*::after, /*After ti dice cosa succede dopo ogni altra stilizzazione*/
+*::before{ /*Before ti dice cosa succede prima di ogni altra stilizzazione*/
     margin:0;
     padding: 0;
-    box-sizing: : border-box;
+    box-sizing: border-box;
+}
+:root{/*E' un root style Wrapper, cioè un elemento che circonda tutta l'applicazione dove possiamo inserire delle variabili globali*/
+    --grey: #f8f8ff;
+    --grey2: #f3f4f5;
+    --grey3: #65676b;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{ /*Container standard*/
+    max-width: 1140px; /*Larghezza massima standard*/
+    margin: auto;
+    width: calc(100% - 48px); /*Prende la larghezza massima disponibile e toglie 48px*/
+}
+
+.flex-container{ /*Container flex*/
+    display:flex;
+}
+
+.align-center{
+    align-items:center;
+}
+
+.justify-content{
+    justify-content:center;
 }
